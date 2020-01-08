@@ -1,5 +1,5 @@
 baseURL = "/"
-title = "EnvoyMesh 专注Envoy"
+title = "Goldydocs"
 
 enableRobotsTXT = true
 
@@ -10,9 +10,9 @@ theme = ["docsy"]
 enableGitInfo = true
 
 # Language settings
-contentDir = "content/zh-cn"
-defaultContentLanguage = "zh-cn"
-defaultContentLanguageInSubdir = true
+contentDir = "content/en"
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false
 # Useful when translating.
 enableMissingTranslationPlaceholders = true
 
@@ -25,7 +25,7 @@ pygmentsUseClasses = false
 pygmentsUseClassic = false
 #pygmentsOptions = "linenos=table"
 # See https://help.farbox.com/pygments.html
-pygmentsStyle = "native"
+pygmentsStyle = "tango"
 
 # Configure how URLs look like per section.
 [permalinks]
@@ -52,19 +52,19 @@ id = "UA-00000000-0"
 # Language configuration
 
 [languages]
-[languages.zh-cn]
-title = "EnvoyMesh 专注Envoy"
-description = "专注Envoy源码分析与实战"
-languageName ="中文"
-# Weight used for sorting.
-weight = 1
-
 [languages.en]
-title = "EnvoyMesh"
-description = "Envoy source analysis and practice"
+title = "Goldydocs"
+description = "A Docsy example site"
 languageName ="English"
 # Weight used for sorting.
-weight = 2
+weight = 1
+[languages.no]
+title = "Goldydocs"
+description = "Docsy er operativsystem for skyen"
+languageName ="Norsk"
+contentDir = "content/no"
+time_format_default = "02.01.2006"
+time_format_blog = "02.01.2006"
 
 [markup]
   [markup.goldmark]
@@ -85,9 +85,9 @@ privacy_policy = "https://policies.google.com/privacy"
 version_menu = "Releases"
 
 # Repository configuration (URLs for in-page links to opening issues and suggesting changes)
-github_repo = "https://github.com/zyfjeff/EnvoyMesh"
+github_repo = "https://github.com/google/docsy-example"
 # An optional link to a related project repo. For example, the sibling repository where your product code lives.
-github_project_repo = "https://github.com/envoyproxy/envoy"
+github_project_repo = "https://github.com/google/docsy"
 
 # Specify a value here if your content directory is not in your repo's root directory
 # github_subdir = ""
@@ -96,7 +96,7 @@ github_project_repo = "https://github.com/envoyproxy/envoy"
 gcs_engine_id = "011737558837375720776:fsdu1nryfng"
 
 # Enable Algolia DocSearch
-algolia_docsearch = true
+algolia_docsearch = false
 
 # Enable Lunr.js offline search
 offlineSearch = false
